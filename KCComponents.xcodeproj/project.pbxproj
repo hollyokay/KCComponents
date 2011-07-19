@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E879BA4713D51D7E00F8A7DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E879BA4613D51D7E00F8A7DA /* Foundation.framework */; };
+		E879BA5213D51D7E00F8A7DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E879BA5113D51D7E00F8A7DA /* UIKit.framework */; };
+		E879BA5313D51D7E00F8A7DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E879BA4613D51D7E00F8A7DA /* Foundation.framework */; };
+		E879BA5513D51D7E00F8A7DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E879BA5413D51D7E00F8A7DA /* CoreGraphics.framework */; };
+		E879BA5813D51D7E00F8A7DA /* libKCComponents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E879BA4313D51D7E00F8A7DA /* libKCComponents.a */; };
+		E879BA5E13D51D7E00F8A7DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E879BA5C13D51D7E00F8A7DA /* InfoPlist.strings */; };
+		E879BA6113D51D7E00F8A7DA /* KCComponentsTests.h in Resources */ = {isa = PBXBuildFile; fileRef = E879BA6013D51D7E00F8A7DA /* KCComponentsTests.h */; };
+		E879BA6313D51D7E00F8A7DA /* KCComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E879BA6213D51D7E00F8A7DA /* KCComponentsTests.m */; };
+		E879BA6F13D51DFA00F8A7DA /* KCHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E879BA6D13D51DFA00F8A7DA /* KCHttpRequest.h */; };
+		E879BA7013D51DFA00F8A7DA /* KCHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E879BA6E13D51DFA00F8A7DA /* KCHttpRequest.m */; };
+		E879BA7613D54AAA00F8A7DA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E879BA7513D54AAA00F8A7DA /* CFNetwork.framework */; };
+		E879BA9A13D57F1000F8A7DA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E879BA9913D57F1000F8A7DA /* CFNetwork.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E879BA5613D51D7E00F8A7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E879BA3A13D51D7E00F8A7DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E879BA4213D51D7E00F8A7DA;
+			remoteInfo = KCComponents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E879BA4313D51D7E00F8A7DA /* libKCComponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKCComponents.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E879BA4613D51D7E00F8A7DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E879BA4A13D51D7E00F8A7DA /* KCComponents-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KCComponents-Prefix.pch"; sourceTree = "<group>"; };
+		E879BA5013D51D7E00F8A7DA /* KCComponentsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCComponentsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E879BA5113D51D7E00F8A7DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E879BA5413D51D7E00F8A7DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E879BA5B13D51D7E00F8A7DA /* KCComponentsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KCComponentsTests-Info.plist"; sourceTree = "<group>"; };
+		E879BA5D13D51D7E00F8A7DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E879BA5F13D51D7E00F8A7DA /* KCComponentsTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KCComponentsTests-Prefix.pch"; sourceTree = "<group>"; };
+		E879BA6013D51D7E00F8A7DA /* KCComponentsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCComponentsTests.h; sourceTree = "<group>"; };
+		E879BA6213D51D7E00F8A7DA /* KCComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCComponentsTests.m; sourceTree = "<group>"; };
+		E879BA6D13D51DFA00F8A7DA /* KCHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCHttpRequest.h; path = network/KCHttpRequest.h; sourceTree = "<group>"; };
+		E879BA6E13D51DFA00F8A7DA /* KCHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCHttpRequest.m; path = network/KCHttpRequest.m; sourceTree = "<group>"; };
+		E879BA7513D54AAA00F8A7DA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E879BA9913D57F1000F8A7DA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E879BA4013D51D7E00F8A7DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E879BA7613D54AAA00F8A7DA /* CFNetwork.framework in Frameworks */,
+				E879BA4713D51D7E00F8A7DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E879BA4C13D51D7E00F8A7DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E879BA9A13D57F1000F8A7DA /* CFNetwork.framework in Frameworks */,
+				E879BA5213D51D7E00F8A7DA /* UIKit.framework in Frameworks */,
+				E879BA5313D51D7E00F8A7DA /* Foundation.framework in Frameworks */,
+				E879BA5513D51D7E00F8A7DA /* CoreGraphics.framework in Frameworks */,
+				E879BA5813D51D7E00F8A7DA /* libKCComponents.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E879BA3813D51D7E00F8A7DA = {
+			isa = PBXGroup;
+			children = (
+				E879BA9913D57F1000F8A7DA /* CFNetwork.framework */,
+				E879BA4813D51D7E00F8A7DA /* KCComponents */,
+				E879BA5913D51D7E00F8A7DA /* KCComponentsTests */,
+				E879BA4513D51D7E00F8A7DA /* Frameworks */,
+				E879BA4413D51D7E00F8A7DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E879BA4413D51D7E00F8A7DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E879BA4313D51D7E00F8A7DA /* libKCComponents.a */,
+				E879BA5013D51D7E00F8A7DA /* KCComponentsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E879BA4513D51D7E00F8A7DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E879BA7513D54AAA00F8A7DA /* CFNetwork.framework */,
+				E879BA4613D51D7E00F8A7DA /* Foundation.framework */,
+				E879BA5113D51D7E00F8A7DA /* UIKit.framework */,
+				E879BA5413D51D7E00F8A7DA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E879BA4813D51D7E00F8A7DA /* KCComponents */ = {
+			isa = PBXGroup;
+			children = (
+				E879BA6C13D51DBA00F8A7DA /* network */,
+				E879BA4913D51D7E00F8A7DA /* Supporting Files */,
+			);
+			path = KCComponents;
+			sourceTree = "<group>";
+		};
+		E879BA4913D51D7E00F8A7DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E879BA4A13D51D7E00F8A7DA /* KCComponents-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E879BA5913D51D7E00F8A7DA /* KCComponentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E879BA6013D51D7E00F8A7DA /* KCComponentsTests.h */,
+				E879BA6213D51D7E00F8A7DA /* KCComponentsTests.m */,
+				E879BA5A13D51D7E00F8A7DA /* Supporting Files */,
+			);
+			path = KCComponentsTests;
+			sourceTree = "<group>";
+		};
+		E879BA5A13D51D7E00F8A7DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E879BA5B13D51D7E00F8A7DA /* KCComponentsTests-Info.plist */,
+				E879BA5C13D51D7E00F8A7DA /* InfoPlist.strings */,
+				E879BA5F13D51D7E00F8A7DA /* KCComponentsTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E879BA6C13D51DBA00F8A7DA /* network */ = {
+			isa = PBXGroup;
+			children = (
+				E879BA6D13D51DFA00F8A7DA /* KCHttpRequest.h */,
+				E879BA6E13D51DFA00F8A7DA /* KCHttpRequest.m */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E879BA4113D51D7E00F8A7DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E879BA6F13D51DFA00F8A7DA /* KCHttpRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E879BA4213D51D7E00F8A7DA /* KCComponents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E879BA6613D51D7E00F8A7DA /* Build configuration list for PBXNativeTarget "KCComponents" */;
+			buildPhases = (
+				E879BA3F13D51D7E00F8A7DA /* Sources */,
+				E879BA4013D51D7E00F8A7DA /* Frameworks */,
+				E879BA4113D51D7E00F8A7DA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KCComponents;
+			productName = KCComponents;
+			productReference = E879BA4313D51D7E00F8A7DA /* libKCComponents.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E879BA4F13D51D7E00F8A7DA /* KCComponentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E879BA6913D51D7E00F8A7DA /* Build configuration list for PBXNativeTarget "KCComponentsTests" */;
+			buildPhases = (
+				E879BA4B13D51D7E00F8A7DA /* Sources */,
+				E879BA4C13D51D7E00F8A7DA /* Frameworks */,
+				E879BA4D13D51D7E00F8A7DA /* Resources */,
+				E879BA4E13D51D7E00F8A7DA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E879BA5713D51D7E00F8A7DA /* PBXTargetDependency */,
+			);
+			name = KCComponentsTests;
+			productName = KCComponentsTests;
+			productReference = E879BA5013D51D7E00F8A7DA /* KCComponentsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E879BA3A13D51D7E00F8A7DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = SmartCloud;
+			};
+			buildConfigurationList = E879BA3D13D51D7E00F8A7DA /* Build configuration list for PBXProject "KCComponents" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E879BA3813D51D7E00F8A7DA;
+			productRefGroup = E879BA4413D51D7E00F8A7DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E879BA4213D51D7E00F8A7DA /* KCComponents */,
+				E879BA4F13D51D7E00F8A7DA /* KCComponentsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E879BA4D13D51D7E00F8A7DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E879BA5E13D51D7E00F8A7DA /* InfoPlist.strings in Resources */,
+				E879BA6113D51D7E00F8A7DA /* KCComponentsTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E879BA4E13D51D7E00F8A7DA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E879BA3F13D51D7E00F8A7DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E879BA7013D51DFA00F8A7DA /* KCHttpRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E879BA4B13D51D7E00F8A7DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E879BA6313D51D7E00F8A7DA /* KCComponentsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E879BA5713D51D7E00F8A7DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E879BA4213D51D7E00F8A7DA /* KCComponents */;
+			targetProxy = E879BA5613D51D7E00F8A7DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E879BA5C13D51D7E00F8A7DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E879BA5D13D51D7E00F8A7DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E879BA6413D51D7E00F8A7DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E879BA6513D51D7E00F8A7DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		E879BA6713D51D7E00F8A7DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/KCComponents.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KCComponents/KCComponents-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E879BA6813D51D7E00F8A7DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/KCComponents.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KCComponents/KCComponents-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E879BA6A13D51D7E00F8A7DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KCComponentsTests/KCComponentsTests-Prefix.pch";
+				INFOPLIST_FILE = "KCComponentsTests/KCComponentsTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E879BA6B13D51D7E00F8A7DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KCComponentsTests/KCComponentsTests-Prefix.pch";
+				INFOPLIST_FILE = "KCComponentsTests/KCComponentsTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E879BA3D13D51D7E00F8A7DA /* Build configuration list for PBXProject "KCComponents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E879BA6413D51D7E00F8A7DA /* Debug */,
+				E879BA6513D51D7E00F8A7DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E879BA6613D51D7E00F8A7DA /* Build configuration list for PBXNativeTarget "KCComponents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E879BA6713D51D7E00F8A7DA /* Debug */,
+				E879BA6813D51D7E00F8A7DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E879BA6913D51D7E00F8A7DA /* Build configuration list for PBXNativeTarget "KCComponentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E879BA6A13D51D7E00F8A7DA /* Debug */,
+				E879BA6B13D51D7E00F8A7DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E879BA3A13D51D7E00F8A7DA /* Project object */;
+}
